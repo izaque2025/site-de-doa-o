@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #315250;
+  color: #2D1E17;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3px;
+  flex: 1 1 100vw;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+}
+select  {
+background-color: #00b5ec;
+height: 30px;
+border-radius: 25%;
+
+}
+select option{
+  background-color: #12da4e;
+}
+
+.dive{
+ display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+  
+  
+}
+
+
+
+.dive p{
+  
+  bottom: 50px;
+}
+.img{
+  width: 450px;
+height: 250px;
+
+margin-top: 4px;
+
+}
+
+
+
+.dive button {
+ margin-left: 200px;
+  padding: 5px 10px;
+  background-color: aquamarine;
+  border-radius:4px ;
+
+}
+
+.diver{
+  background-color: rgb(247, 247, 241);
+  margin: 10px;
+  width: 500px;
+  height: 350px;
+  padding-bottom: 10px;
+  top: 20px;
+ 
+  right: 50px;
+}
+.diver2{
+  background-color: rgb(247, 247, 241);
+  margin: 10px;
+  width: 500px;
+  height: 350px;
+  padding-bottom: 10px;
+  
+ 
+  right: 50px;
+}
+
+.inp{
+ padding: 50px;
+}
+.inp input{
+  background-color: yellow;
+  color: #2b1899;
+}
+#we{
+  padding: 5px 20px;
+  border-radius: 25px;
+  background-color: yellow;
+}
+#we:hover{
+background-color: #ec0000;
+color: #2b1899;
+border-radius:none ;
+}
+header, nav, main, aside, footer {
+  background-color: #33a5ad;
+  display: flex;
+  margin: 3px;
+  flex: 1 1 100vw;
+}
+
+header {
+  height: 100px;
+}
+
+header #logo {
+  display: flex;
+  background-color:#ec0000;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 200px;
+}
+header #logo, img{
+width: 100%;
+height: 100px;
+}
+#openMenu, #closeMenu {
+  border: none;
+  background: none;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0px 5px 0px 5px;
+  cursor: pointer;
+  display: none;
+}
+
+nav {
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+nav a {
+  margin: 3%;
+  font-size: 15pt;
+}
+nav a:hover{
+  
+  border-top: 2px solid palevioletred;
+  color: burlywood;
+}
+
+main {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+aside {
+  height: 100px;
+}
+
+
+
+footer {
+  height: 100px;
+  background-color: #04575c;
+  color: #1a12b4;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #2D1E17;
+}
+@media (max-width:1530px) {
+  
+  .diver2{
+    display: none;
+    justify-content: center;
+    align-items: center;}
+  }
+   
+
+
+@media (max-width: 768px) {
+  #openMenu, #closeMenu {
+    display: block;
+  }
+
+   .dive{
+    background-color: #08b1ac;
+    
+    justify-content: center;
+    align-items: center;
+
+   }
+    
+
+  .diver{
+    margin: 2px;
+    width: 500px;
+    height: 300px;
+    background-color: #04575c;
+  }
+
+  .img{
+    width: 450px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+
+  }
+  #openMenu {
+    margin-left: auto;
+  }
+   
+  nav {
+    position: fixed;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(142, 126, 114);
+    justify-content: center;
+    align-items: center;
+    display: none;
+    margin: 0;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  main {
+    height: 200vh;
+  }
+}
+
+@media (max-width: 600px){
+.inp{
+  width: 350px;
+  margin: 5px;
+}
+.inp input{
+  padding: 10px;
+  margin: 5px;
+  background-color: #ec0000;
+}
+aside{
+  height: auto;
+}
+
+}
+@media (max-width: 420px){
+  p{
+    font-size: 15px;
+  }
+ .diver{
+  width: 360px;
+  top: -20%;
+ }
+ 
+ .img{
+width: 350px;
+margin: 5px;
+ }
+
+ aside{
+  width: 350px;
+ }
+}
